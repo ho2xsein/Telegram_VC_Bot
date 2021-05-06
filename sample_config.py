@@ -1,20 +1,20 @@
-HEROKU = True   # NOTE Make it false if you're not deploying on heroku.
+HEROKU = False   # NOTE Make it false if you're not deploying on heroku.
 
 # NOTE these values are for heroku.
 if HEROKU:
     from os import environ
-    API_ID = int(environ["API_ID"])
-    API_HASH = environ["API_HASH"]
+    API_ID = int(environ["5378568"])
+    API_HASH = environ["89ffcb590951a70b2f00d51a3689458b"]
     SUDO_CHAT_ID = int(environ["SUDO_CHAT_ID"]) # Chat where the bot will play the music.
-    SUDOERS = list(int(x) for x in environ.get("SUDOERS", "").split()) # Users which have special control over the bot.
+    SUDOERS = list(int(x) for x in environ.get("SUDOERS", "63180149").split()) # Users which have special control over the bot.
     SESSION_STRING = environ["SESSION_STRING"] # Check Readme for session
 
 # NOTE Fill this if you are not deploying on heroku.
 if not HEROKU:
-    API_ID = 14371
-    API_HASH = "e46b6c854d2bf58a0"
-    SUDO_CHAT_ID = -1001485876964
-    SUDOERS = [1243703097, 13216546]
+    API_ID = 5378568
+    API_HASH = "89ffcb590951a70b2f00d51a3689458b"
+    SUDO_CHAT_ID = -1001261428285
+    SUDOERS = [63180149]
 
 # don't make changes below this line
 ARQ_API = "https://thearq.tech"
