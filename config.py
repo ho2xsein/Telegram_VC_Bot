@@ -13,7 +13,7 @@ if HEROKU:
 if not HEROKU:
     API_ID = 5378568
     API_HASH = "89ffcb590951a70b2f00d51a3689458b"
-    SUDO_CHAT_ID = -1001359346286
+    SUDO_CHAT_ID = -1001261428285
     SUDOERS = [63180149]
 
 # don't make changes below this line
